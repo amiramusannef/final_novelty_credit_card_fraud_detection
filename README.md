@@ -78,6 +78,7 @@ from tensorflow.keras import regularizers
 ## Conclusion
 
 This is Group 21 final project for DS340W Spring 2025. 
+
 Written by Nur Najwa Ayda Sahren & Che Amira Aisyah Musannef
 
 
