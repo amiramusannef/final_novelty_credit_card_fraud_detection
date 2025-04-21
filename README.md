@@ -9,7 +9,7 @@ This model was developed based on a Kaggle notebook titled “Credit Card Fraud 
 Modifications: Implementation of Hybrid Sampling Technique and ANN model building including custom dropout, batch normalization, and callback tuning. 
 
 # Dataset 
-The dataset used in this project is anonymized and was provided by an undisclosed institution for research purposes due to privacy and confidential issue. It simulates transactional data related to credit card usage and fraud detection.
+The dataset used in this project is anonymized and was provided by an undisclosed institution for research purposes due to privacy and confidential issue. We sourced the dataset from a GitHub repository (https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models?tab=readme-ov-file) which references the original data hosted on Kaggle. It simulates transactional data related to credit card usage and fraud detection. 
 
 Each row represents a single transaction and includes the following features:
 
@@ -28,4 +28,7 @@ Each row represents a single transaction and includes the following features:
 > 7) online_order: Indicates if the transaction was done online (1) or in-person (0).
 
 > 8) fraud: Binary label where 1 indicates a fraudulent transaction and 0 indicates a legitimate one.
+
+Due to its large size, the files are available via OneDrive links provided in the repository 
+* Dataset: Download the dataset from "cardtrans_csv_onedrive.txt" 
 
