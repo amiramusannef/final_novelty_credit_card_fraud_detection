@@ -4,7 +4,7 @@ We selected this topic because while credit card fraud detection is a well-resea
 Goal: Optimizing fraud detection model performance while making the predictions of the model more understandable and transparent by visualizing which features influence their decisions.
 
 ## General Acknowledgement
-This model was developed based on a [Kaggle notebook by Shalinee Kumari](https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models) which provided data understanding, EDA, model building and model evaluation.
+The notebook was developed based on a [Kaggle notebook by Shalinee Kumari](https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models) which provided data understanding, EDA, model building and model evaluation.
 
 **Modifications and Contributions:**
 - Added hybrid sampling (SMOTETomek)
