@@ -17,17 +17,17 @@ Each row represents a single transaction and includes the following features:
 
 > 2) distance_from_last_transaction: Distance (in km) from the location of the previous transaction.
 
-ratio_to_median_purchase_price: Ratio of the current transaction amount to the cardholder’s median purchase price.
+> 3)ratio_to_median_purchase_price: Ratio of the current transaction amount to the cardholder’s median purchase price.
 
-repeat_retailer: Binary indicator (1 or 0) showing if the transaction is at a retailer the customer has visited before.
+> 4)repeat_retailer: Binary indicator (1 or 0) showing if the transaction is at a retailer the customer has visited before.
 
-used_chip: Indicates whether a chip was used in the card (1) or not (0).
+> 5)used_chip: Indicates whether a chip was used in the card (1) or not (0).
 
-used_pin_number: Indicates if a PIN was used during the transaction (1) or not (0).
+> 6)used_pin_number: Indicates if a PIN was used during the transaction (1) or not (0).
 
-online_order: Indicates if the transaction was done online (1) or in-person (0).
+> 7)online_order: Indicates if the transaction was done online (1) or in-person (0).
 
-fraud: Binary label where 1 indicates a fraudulent transaction and 0 indicates a legitimate one.
+> 8)fraud: Binary label where 1 indicates a fraudulent transaction and 0 indicates a legitimate one.
 
 This dataset enables the modeling and evaluation of fraud detection systems based on transactional patterns and contextual features.
 
