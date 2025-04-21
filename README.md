@@ -75,11 +75,8 @@ from tensorflow.keras import regularizers
 6. Train and evaluate a Random Forest model for comparison with feature importance analysis.
 7. Compare models and visualize performance.
 
-## Conclusion
-
-This is Group 21 final project for DS340W Spring 2025. 
-
-Written by Nur Najwa Ayda Sahren & Che Amira Aisyah Musannef
+### This is Group 21 final project for DS340W Spring 2025. 
+### Written by Nur Najwa Ayda Sahren & Che Amira Aisyah Musannef
 
 
 
