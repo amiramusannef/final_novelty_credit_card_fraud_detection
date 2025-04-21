@@ -6,7 +6,7 @@ Goal: Optimizing fraud detection model performance while making the predictions 
 ## General Acknowledgement
 The notebook was developed based on a [Kaggle notebook by Shalinee Kumari](https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models) which provided data understanding, EDA, model building and model evaluation.
 
-**Modifications and Contributions:**
+**Modifications and Contributions (inspired from 3 literature works):**
 - Added hybrid sampling (SMOTETomek)
 - Built a custom ANN architecture using Keras with:
   - Batch Normalization
@@ -74,6 +74,11 @@ from tensorflow.keras import regularizers
 5. Apply SHAP for feature explainability on ANN.
 6. Train and evaluate a Random Forest model for comparison with feature importance analysis.
 7. Compare models and visualize performance.
+
+## Conclusion
+
+This is Group 21 final project for DS340W Spring 2025. 
+Written by Nur Najwa Ayda Sahren & Che Amira Aisyah Musannef
 
 
 
