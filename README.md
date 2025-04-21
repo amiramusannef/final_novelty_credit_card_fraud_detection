@@ -4,9 +4,17 @@ We selected this topic because while credit card fraud detection is a well-resea
 Goal: Optimizing fraud detection model performance while making the predictions of the model more understandable and transparent by visualizing which features influence their decisions.
 
 # General Acknowledgement
-This model was developed based on a Kaggle notebook titled “Credit Card Fraud Detection using ML models” by Shalinee Kumari (https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models?tab=readme-ov-file), which provided data understanding, EDA, model building and model evaluation.
+This model was developed based on a [Kaggle notebook by Shalinee Kumari](https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models) which provided data understanding, EDA, model building and model evaluation.
 
-Modifications: Implementation of Hybrid Sampling Technique and ANN model building including custom dropout, batch normalization, and callback tuning. 
+**Modifications and Contributions:**
+- Added hybrid sampling (SMOTETomek)
+- Built a custom ANN architecture using Keras with:
+  - Batch Normalization
+  - Dropout
+  - L2 Regularization
+  - Callbacks (EarlyStopping, ModelCheckpoint, Learning Rate Scheduler)
+- Integrated SHAP for ANN interpretability
+- Model comparison with Random Forest and feature importance analysis 
 
 # Dataset 
 The dataset used in this project is anonymized and was provided by an undisclosed institution for research purposes due to privacy and confidential issue. We sourced the dataset from a GitHub repository (https://github.com/Shalinee13/Credit-Card-Fraud-Detection-using-ML-models?tab=readme-ov-file) which references the original data hosted on Kaggle. Due to its large size, the files are available via OneDrive links provided in the repository 
@@ -29,6 +37,43 @@ The dataset simulates transactional data related to credit card usage and fraud 
 > 7) online_order: Indicates if the transaction was done online (1) or in-person (0).
 
 > 8) fraud: Binary label where 1 indicates a fraudulent transaction and 0 indicates a legitimate one.
+
+# Tools & Libraries Used
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import shap
+import warnings
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import metrics
+from sklearn.metrics import (
+    accuracy_score, f1_score, confusion_matrix,
+    classification_report, average_precision_score, ConfusionMatrixDisplay
+)
+
+from imblearn.over_sampling import SMOTE
+from imblearn.combine import SMOTETomek
+
+from tensorflow import keras
+from tensorflow.keras import regularizers
+
+# Project Pipeline
+
+1. Load and explore the dataset.
+2. Preprocess the data (handle imbalance with hybrid sampling, scale features).
+3. Build and train an Artificial Neural Network (ANN) using Keras.
+4. Evaluate model performance using metrics like Accuracy, AUPRC, and F1-score.
+5. Apply SHAP for feature explainability on ANN.
+6. Train and evaluate a Random Forest model for comparison with feature importance analysis.
+7. Compare models and visualize performance.
+
+
 
 
 
